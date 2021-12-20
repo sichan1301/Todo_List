@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <p class="title">Sichan's Todo List</p>
+    
+    <nav>
+        <button data-category-name="day" class="nav-category">오늘</button>
+        <button data-category-name="weekend" class="nav-category">이번 주</button>
+        <button data-category-name="month" class="nav-category">이번 달</button>
+        <button data-category-name="year" class="nav-category">올해</button>
+    </nav>
+
+    <div id="container">
+
+        <div class="sub">
+            <p id="category-title" class="sub_text">오늘 내가 해야할 일</p>
+            <p class="sub_count">0개</p>
+        </div>
+
+        <form class="form">
+            <input class="form_input" type="text">
+            <button class="form_btn">입력</button>
+        </form>
+        <ul id="todoList"></ul>
+    </div>
+
+    <script src ="./js/index.js"></script>
+</body>
+</html>

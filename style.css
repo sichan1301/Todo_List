@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Sunflower:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(-45deg, #fa997b, #f78db5, #3fa3c7, #80f1d7);
+}
+
+.title {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 8px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+nav {
+  max-width: 60%;
+  margin: 2% auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-category {
+  font-family: "Sunflower", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f78db5;
+  border: 4px solid #09fdc4;
+  width: 120px;
+  height: 50px;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#container {
+  padding: 30px;
+  max-width: 700px;
+  background: #fff;
+  border: 20px solid #19855b;
+  border-radius: 15%;
+  box-shadow: 10px 10px 40px 10px rgba(78, 17, 75, 0.7);
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-between;
+}
+.sub_text {
+  color: #003d26;
+  font-family: "Sunflower", sans-serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.sub_count {
+  font-family: "Sunflower", sans-serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form_input {
+  width: 50%;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #19855b;
+}
+
+.form_btn {
+  font-family: "Sunflower", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  width: 15%;
+  height: 40px;
+  margin-left: 20px;
+  border: 2px solid #19855b;
+  border-radius: 15px;
+  background-color: white;
+}
+#todoList {
+  padding: 0;
+}
+#li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.todo {
+  font-family: "Sunflower", sans-serif;
+  font-size: 20px;
+  line-height: 74px;
+  color: #003d26;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.li_button {
+  display: flex;
+}
+.update,
+.delete,
+.complete {
+  line-height: 70px;
+  color: #003d26;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 2px;
+  margin-right: 5px;
+  background-color: white;
+}
+
+.update,
+.delete {
+  margin-right: 13px;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+  color: rgb(252, 114, 114);
+}
