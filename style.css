@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Sunflower:wght@300&display=swap");
 
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: linear-gradient(-45deg, #fa997b, #f78db5, #3fa3c7, #80f1d7);
+  /* background: linear-gradient(-45deg, #fa997b, #f78db5, #3fa3c7, #80f1d7); */
 }
 
 .title {
+  background: linear-gradient(90deg, #f78db5, #f78db5, #3fa3c7, #3fa3c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "PT Sans Narrow", sans-serif;
   text-align: center;
-  font-weight: bold;
-  color: #fff;
-  font-size: 50px;
+  font-weight: 900;
+  font-size: 60px;
   letter-spacing: 8px;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -34,7 +36,7 @@ nav {
   font-size: 20px;
   font-weight: bold;
   color: #f78db5;
-  border: 4px solid #09fdc4;
+  border: none;
   width: 120px;
   height: 50px;
   background: white;
@@ -46,9 +48,9 @@ nav {
   padding: 30px;
   max-width: 700px;
   background: #fff;
-  border: 20px solid #19855b;
-  border-radius: 15%;
-  box-shadow: 10px 10px 40px 10px rgba(78, 17, 75, 0.7);
+  /* border: 10px solid hsla(180, 100%, 100%, 0.8); */
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px rgba(78, 17, 75, 0.45);
   margin: 0 auto;
   min-height: 90vh;
 }
@@ -58,40 +60,52 @@ nav {
   justify-content: space-between;
 }
 .sub_text {
-  color: #003d26;
+  color: #f78db5;
   font-family: "Sunflower", sans-serif;
+  font-weight: bold;
   font-size: 30px;
   padding: 10px;
 }
 
 .sub_count {
   font-family: "Sunflower", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px;
+  color: #999;
 }
 
 .form {
   display: flex;
-  justify-content: space-evenly;
+  margin: 20px auto;
+  width: 500px;
+  align-items: center;
 }
 
 .form_input {
-  width: 50%;
+  flex-basis: 90%;
+  width: 70%;
   height: 40px;
-  border-radius: 15px;
-  border: 2px solid #19855b;
+  border-radius: 23px;
+  padding-left: 20px;
+  border: 2px solid #f78db5;
+}
+
+.form_input:focus {
+  outline: 2px solid #f78db5;
 }
 
 .form_btn {
+  flex-basis: 10%;
   font-family: "Sunflower", sans-serif;
-  font-size: 17px;
   cursor: pointer;
-  width: 15%;
-  height: 40px;
+  width: 10%;
+  height: 45px;
   margin-left: 20px;
-  border: 2px solid #19855b;
-  border-radius: 15px;
-  background-color: white;
+  border: none;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 100%;
+  background-color: #f78db5;
 }
 #todoList {
   padding: 0;
@@ -109,10 +123,9 @@ nav {
 .todo {
   font-family: "Sunflower", sans-serif;
   font-size: 20px;
-  line-height: 74px;
-  color: #003d26;
+  line-height: 28px;
+  color: #777;
   padding: 0;
-  text-decoration: underline;
 }
 
 .li_button {
@@ -121,9 +134,9 @@ nav {
 .update,
 .delete,
 .complete {
-  line-height: 70px;
-  color: #003d26;
-  font-size: 15px;
+  line-height: 28px;
+  color: #777;
+  font-size: 13px;
   cursor: pointer;
   padding: 2px;
   margin-right: 5px;
@@ -137,5 +150,5 @@ nav {
 
 .todo-complete {
   text-decoration: line-through;
-  color: rgb(252, 114, 114);
+  opacity: 0.45;
 }
