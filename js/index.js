@@ -12,6 +12,7 @@ const store = {
     },
 };
 
+
 function App(){
     
     // Storage에 들어갈 배열 생성
