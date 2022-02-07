@@ -132,10 +132,11 @@ function App(){
 
 
     // input창에 todolist를 입력하고 (혹은 공백) enter누르는 순간에 addTodoList return
-    $(".form_input").addEventListener("keydown", (e) =>{
-        if (e.key === "Enter"){
+    $(".form_input").addEventListener("keypress", (e) =>{
+        if (e.key !== "Enter"){
             return;
         }
+        e.preventDefault();
         addTodoList();
     });
 
