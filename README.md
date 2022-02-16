@@ -23,4 +23,4 @@
 
 ## 😃 배포된 URL
 
-<!-- - [https://sichan-10000hours.netlify.app/](https://sichan-10000hours.netlify.app/) -->
+- [https://sichan-todolist.netlify.app/](https://sichan-todolist.netlify.app/)
