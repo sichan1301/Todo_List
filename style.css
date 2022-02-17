@@ -46,7 +46,7 @@ nav {
 
 #container {
   padding: 30px;
-  max-width: 700px;
+  width: 700px;
   background: #fff;
   /* border: 10px solid hsla(180, 100%, 100%, 0.8); */
   border-radius: 25px;
@@ -151,4 +151,10 @@ nav {
 .todo-complete {
   text-decoration: line-through;
   opacity: 0.45;
+}
+
+@media only screen and (max-width: 860px) {
+  #container {
+    width: 400px;
+  }
 }
