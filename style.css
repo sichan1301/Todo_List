@@ -157,7 +157,36 @@ nav {
 }
 
 @media only screen and (max-width: 860px) {
+  .title {
+    font-size: 1.5rem;
+  }
   #container {
-    width: 320px;
+    width: 75%;
+  }
+  nav {
+    max-width: 80%;
+  }
+  .nav-category {
+    font-size: 1.1rem;
+    margin: 0 0.05em;
+  }
+  .form_input {
+    flex-basis: 75%;
+    width: 10%;
+  }
+
+  .form_btn {
+    width: 90px;
+    font-size: 28px;
+    flex-basis: 25%;
+  }
+
+  .sub_text {
+    font-size: 1.3rem;
+  }
+
+  .sub_count {
+    font-size: 1rem;
+    margin-top: 2px;
   }
 }
